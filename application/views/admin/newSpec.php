@@ -4,7 +4,7 @@
     <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>UBSI Tech | Dashboard</title>
+    <title>PORTALENT Tech | Dashboard</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -161,8 +161,8 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4 overflow-hidden">
         <!-- Brand Logo -->
         <a href="index3.html" class="brand-link">
-        <img src="<?php echo base_url()?>/assets/images/logo_ubsi.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-        <span class="brand-text font-weight-light">UBSI Tech</span>
+        <img src="<?php echo base_url()?>/assets/images/portalent1.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">Portalent Tech</span>
         </a>
 
         <!-- Sidebar -->
@@ -248,7 +248,7 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link active">
                         <i class="nav-icon fas fa-layer-group"></i>
-                        <p>Product
+                        <p>Jobs
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -256,13 +256,13 @@
                         <li class="nav-item">
                             <a href="<?php echo site_url('admin/newProduct'); ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                            <p>New Product</p>
+                            <p>New Jobs</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="<?php echo site_url('admin/allProducts'); ?>" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>All Products</p>
+                            <p>All Jobs</p>
                             </a>
                         </li>
                     </ul>

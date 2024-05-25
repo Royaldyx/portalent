@@ -431,7 +431,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 $this->load->view('admin/footer', $data);
             }
             else{
-                setFlashData('alert-danger', 'Please login first to add your category', 'admin/login');
+                setFlashData('alert-danger', 'Please login first to add your product', 'admin/login');
             }
         }
 

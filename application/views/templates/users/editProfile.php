@@ -86,13 +86,14 @@
                           <!-- <input type="text" class="form-control" id="inputSkills" placeholder="Skills"> -->
                         </div>
                       </div>
+                      <!-- Comming soon fitur edit image
                       <div class="form-group row">
                         <label for="inputImages" class="col-sm-2 col-form-label">Image</label>
                         <div class="col-sm-10">
                           <?php echo form_upload('image', '', 'class= "form-control-file"'); ?>
-                          <!-- <input type="text" class="form-control" id="inputSkills" placeholder="Skills"> -->
+                          <input type="text" class="form-control" id="inputSkills" placeholder="Skills"> 
                         </div>
-                      </div>
+                      </div> -->
                       <div class="form-group row">
                         <label for="inputCv" class="col-sm-2 col-form-label">CV</label>
                         <div class="col-sm-10">

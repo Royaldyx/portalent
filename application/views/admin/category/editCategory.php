@@ -50,7 +50,7 @@
                 <li class="nav-item">
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-layer-group"></i>
-                        <p>Product
+                        <p>Jobs
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -58,13 +58,13 @@
                         <li class="nav-item">
                             <a href="<?php echo site_url('admin/newProduct'); ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                            <p>New Product</p>
+                            <p>New Jobs</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="<?php echo site_url('admin/allProducts'); ?>" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>All Products</p>
+                            <p>All Jobs</p>
                             </a>
                         </li>
                     </ul>

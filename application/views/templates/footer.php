@@ -9,7 +9,7 @@
                             <div class="footer-tittle">
                                 <h4>About Us</h4>
                                 <div class="footer-pera">
-                                    <p>We made this project for Web Progamming III</p>
+                                    <p>BOOTCAMP numero uno</p>
                             </div>
                             </div>
                         </div>
@@ -22,10 +22,10 @@
                             <h4>Contact Info</h4>
                             <ul>
                                 <li>
-                                <p>Address :Jl.Riverside 1 No.26 Waterfront Cibatu</p>
+                                <p>Address :Dimana mana hatikusenang</p>
                                 </li>
-                                <li><a href="#">Phone : +62 82135277397</a></li>
-                                <li><a href="#">Email : deigosiahaan@gmail.com</a></li>
+                                <li><a href="#">Phone : +62 8888888888</a></li>
+                                <li><a href="#">Email : portalent05@gmail.com</a></li>
                             </ul>
                         </div>
 
@@ -36,11 +36,10 @@
                         <div class="footer-tittle">
                             <h4>Important Link</h4>
                             <ul>
-                                <li><a href="https://github.com/deigo96/job-portal.git" target="_blank"> View Project</a></li>
-                                <li><a href="<?= base_url('contact'); ?>">Contact Us</a></li>
-                                <li><a href="#">Testimonial</a></li>
-                                <li><a href="#">Proparties</a></li>
-                                <li><a href="#">Support</a></li>
+                                <li><a href="#">home</a></li>
+                                <li><a href="#">find job</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -82,14 +81,8 @@
 Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                             </div>
-                            <div class="footer-copy-right">
-                              <p class="offset-3 text-center">&</p>
-                            </div>
-                            <div class="footer-copy-right">
-                               <p class="offset-3 text-center">
-                                Modified by <a href="https://github.com/deigo96/job-portal.git" target="_blank" class="text-info">Deigo Siahaan</a>
-                               </p>
-                            </div>
+
+                            
                         </div>
                         <div class="col-xl-2 col-lg-2">
                             <div class="footer-social f-right">

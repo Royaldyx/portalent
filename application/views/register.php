@@ -33,7 +33,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-        <b class="navbar-brand display-5 text-primary ">UBSI</b>
+        <b class="navbar-brand display-5 text-primary ">PORTALENT</b>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle Navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -180,7 +180,7 @@
     <div class="register-box">
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="<?php echo base_url().'home'; ?>" class="h1"><b>UBSI</b>Mobile</a>
+                <a href="<?php echo base_url().'home'; ?>" class="h1"><b>PORTALENT</b>Mobile</a>
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Register a new membership</p>
@@ -233,7 +233,7 @@
                     </div>
                 </form>
 
-                <div class="social-auth-links text-center">
+                <!-- <div class="social-auth-links text-center">
                     <p>- OR -</p>
                     <a href="#" class="btn btn-block btn-primary">
                         <i class="fab fa-facebook mr-2"></i>
@@ -243,7 +243,7 @@
                         <i class="fab fa-google-plus mr-2"></i>
                         Sign up using Google+
                     </a>
-                </div>
+                </div> -->
                 <div class="text-center">
                     <a href="<?php echo base_url().'home/login';?>" class="text-center">I already have a membership</a>
                 </div>

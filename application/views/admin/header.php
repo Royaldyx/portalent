@@ -71,8 +71,8 @@
   <aside class="main-sidebar sidebar-light-primary elevation-4 overflow-hidden">
     <!-- Brand Logo -->
     <a href="<?php echo base_url('admin') ?>" class="brand-link navbar-light">
-      <img src="<?php echo base_url()?>/assets/assets/img/logo/horizontal_on_white_by_logaster.png" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">UBSI Portal</span>
+      <img src="<?php echo base_url()?>/assets/assets/img/logo/portalent1.png" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">PORTALENT</span>
     </a>
     
     <!-- Sidebar -->

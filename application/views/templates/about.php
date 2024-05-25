@@ -2,7 +2,7 @@
 
         <!-- Hero Area Start-->
         <div class="slider-area ">
-        <div class="single-slider section-overly slider-height2 d-flex align-items-center" data-background="<?= base_url('assets/'); ?>images/logo_ubsi.png" style="background-size:contain;" >
+        <div class="single-slider section-overly slider-height2 d-flex align-items-center" data-background="<?= base_url('assets/'); ?>images/portalent1.png" style="background-size:contain;" >
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -24,176 +24,16 @@
                         <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch mb-3">
                             <div class="card bg-light">
                                 <div class="card-header text-muted border-bottom-0">
-                                Web Developer
+                                Team Leader | Web Developer
                                 </div>
                                 <div class="card-body pt-0">
                                     <div class="row">
                                         <div class="col-7">
-                                            <h2 class="lead"><b>Deigo Siahaan</b></h2>
-                                            <p class="text-muted text-sm"><b>About: </b> Web Developer / Back End Developer / Gamers  </p>
+                                            <h2 class="lead"><b>Yoga Pratama Royaldy</b></h2>
+                                            <p class="text-muted text-sm"><b>About: </b> Web Developer / Shoutcaster  </p>
                                             <ul class="ml-4 mb-0 fa-ul text-muted">
-                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Address: Jl.Riverside 1 No.26 Cibatu</li>
-                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone : +62 - 821 3527 7397</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-5 text-center">
-                                            <img src="<?= base_url('assets/'); ?>images/deigo.jpg" alt="user-avatar" class="img-circle img-fluid rounded-circle">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="text-right">
-                                        <a href="#" class="btn-sm bg-teal">
-                                        <i class="fas fa-comments"></i>
-                                        </a>
-                                        <a href="#" class="btn-sm btn-primary">
-                                        <i class="fas fa-user"></i> View Profile
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch mb-3">
-                            <div class="card bg-light">
-                                <div class="card-header text-muted border-bottom-0">
-                                    Team Leader
-                                </div>
-                                <div class="card-body pt-0">
-                                    <div class="row">
-                                        <div class="col-7">
-                                            <h2 class="lead"><b>Siti Lestari</b></h2>
-                                            <p class="text-muted text-sm"><b>About: </b> Web Designer / UX / Graphic Artist / Coffee Lover </p>
-                                            <ul class="ml-4 mb-0 fa-ul text-muted">
-                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Address: Cikarang, Kab.Bekasi 04312, Jabar</li>
-                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone : +62 - 12 12 23 52</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-5 text-center">
-                                            <img src="<?= base_url('assets/'); ?>images/female.png" alt="user-avatar" class="img-circle img-fluid rounded-circle">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="text-right">
-                                        <a href="#" class="btn-sm bg-teal">
-                                            <i class="fas fa-comments"></i>
-                                        </a>
-                                        <a href="#" class="btn-sm btn-primary">
-                                            <i class="fas fa-user"></i> View Profile
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch mb-3">
-                            <div class="card bg-light">
-                                <div class="card-header text-muted border-bottom-0">
-                                Digital Strategist
-                                </div>
-                                <div class="card-body pt-0">
-                                    <div class="row">
-                                        <div class="col-7">
-                                            <h2 class="lead"><b>Agus Prayitno</b></h2>
-                                            <p class="text-muted text-sm"><b>About: </b> Web Designer / UX / Graphic Artist / Coffee Lover </p>
-                                            <ul class="ml-4 mb-0 fa-ul text-muted">
-                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Address: Cikarang, Kab.Bekasi 04312, Jabar</li>
-                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone : +62 - 12 12 23 52</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-5 text-center">
-                                            <img src="<?= base_url('assets/'); ?>images/male.png" alt="user-avatar" class="img-circle img-fluid rounded-circle">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="text-right">
-                                        <a href="#" class="btn-sm bg-teal">
-                                            <i class="fas fa-comments"></i>
-                                        </a>
-                                        <a href="#" class="btn-sm btn-primary">
-                                            <i class="fas fa-user"></i> View Profile
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch mb-3">
-                            <div class="card bg-light">
-                                <div class="card-header text-muted border-bottom-0">
-                                Digital Strategist
-                                </div>
-                                <div class="card-body pt-0">
-                                    <div class="row">
-                                        <div class="col-7">
-                                            <h2 class="lead"><b>Christin Octavian</b></h2>
-                                            <p class="text-muted text-sm"><b>About: </b> Web Designer / UX / Graphic Artist / Coffee Lover </p>
-                                            <ul class="ml-4 mb-0 fa-ul text-muted">
-                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Address: Cikarang, Kab.Bekasi 04312, Jabar</li>
-                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone : +62 - 12 12 23 52</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-5 text-center">
-                                            <img src="<?= base_url('assets/'); ?>images/female.png" alt="user-avatar" class="img-circle img-fluid rounded-circle">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="text-right">
-                                        <a href="#" class=" btn-sm bg-teal">
-                                            <i class="fas fa-comments"></i>
-                                        </a>
-                                        <a href="#" class="btn-sm btn-primary">
-                                            <i class="fas fa-user"></i> View Profile
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch mb-3">
-                            <div class="card bg-light">
-                                <div class="card-header text-muted border-bottom-0">
-                                Digital Strategist
-                                </div>
-                                <div class="card-body pt-0">
-                                    <div class="row">
-                                        <div class="col-7">
-                                            <h2 class="lead"><b>Fadnur Alamanda</b></h2>
-                                            <p class="text-muted text-sm"><b>About: </b> Web Designer / UX / Graphic Artist / Coffee Lover </p>
-                                            <ul class="ml-4 mb-0 fa-ul text-muted">
-                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Address: Cikarang, Kab.Bekasi 04312, Jabar</li>
-                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone : +62 - 12 12 23 52</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-5 text-center">
-                                            <img src="<?= base_url('assets/'); ?>images/male.png" alt="user-avatar" class="img-circle img-fluid rounded-circle">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="card-footer">
-                                    <div class="text-right">
-                                        <a href="#" class="btn-sm bg-teal">
-                                            <i class="fas fa-comments"></i>
-                                        </a>
-                                        <a href="#" class="btn-sm btn-primary">
-                                            <i class="fas fa-user"></i> View Profile
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-4 d-flex align-items-stretch mb-3">
-                            <div class="card bg-light">
-                                <div class="card-header text-muted border-bottom-0">
-                                Digital Strategist
-                                </div>
-                                <div class="card-body pt-0">
-                                    <div class="row">
-                                        <div class="col-7">
-                                            <h2 class="lead"><b>Barry Elang</b></h2>
-                                            <p class="text-muted text-sm"><b>About: </b> Web Designer / UX / Graphic Artist / Coffee Lover </p>
-                                            <ul class="ml-4 mb-0 fa-ul text-muted">
-                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Address: Cikarang, Kab.Bekasi 04312, Jabar</li>
-                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone : +62 - 12 12 23 52</li>
+                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-building"></i></span> Address: Cibinong, Bogor</li>
+                                                <li class="small"><span class="fa-li"><i class="fas fa-lg fa-phone"></i></span> Phone : 088888888888</li>
                                             </ul>
                                         </div>
                                         <div class="col-5 text-center">
@@ -212,7 +52,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>                    
                     </div>
                 </div>
                 <!-- /.card-body -->
@@ -301,7 +141,7 @@
                                     <div class="testimonial-founder  ">
                                         <div class="founder-img mb-30">
                                             <img src="<?php echo base_url('assets/images/female.png') ?>" alt="">
-                                            <span>Siti Lestari</span>
+                                            <span>Yanti</span>
                                             <p>Creative Director</p>
                                         </div>
                                     </div>
@@ -318,7 +158,7 @@
                                     <div class="testimonial-founder  ">
                                         <div class="founder-img mb-30">
                                             <img src="<?php echo base_url('assets/images/male.png') ?>" alt="">
-                                            <span>Agus prayitno</span>
+                                            <span>Jamal</span>
                                             <p>Creative Director</p>
                                         </div>
                                     </div>
@@ -335,7 +175,7 @@
                                     <div class="testimonial-founder  ">
                                         <div class="founder-img mb-30">
                                             <img src="<?php echo base_url('assets/images/male.png') ?>" alt="">
-                                            <span>Fadnur Alamanda</span>
+                                            <span>Susanto</span>
                                             <p>Creative Director</p>
                                         </div>
                                     </div>

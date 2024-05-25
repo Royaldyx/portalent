@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 //$config['base_url'] = $root;
 
-$config['base_url'] = 'http://localhost/bc1/';
+$config['base_url'] = 'http://localhost/portalent/';
 /*
 |---------------------------------------------------------------
 | Index File
@@ -523,7 +523,7 @@ $config['rewrite_short_tags'] = FALSE;
 */
 $config['proxy_ips'] = '';
 
-$config['pageTitle'] = "UBSIPORTAL";
-$config['pageTitleLogin'] = "UBSIPORTAL | Login";
-$config['pageTitleAdmin'] = "UBSIPORTAL | Admin";
-$config['pageTitleReg'] = "UBSIPORTAL | Register";
+$config['pageTitle'] = "PORTALENT";
+$config['pageTitleLogin'] = "PORTALENT | Login";
+$config['pageTitleAdmin'] = "PORTALENT | Admin";
+$config['pageTitleReg'] = "PORTALENT | Register";

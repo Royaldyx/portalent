@@ -6,7 +6,7 @@
                     <div class="col-lg-3 col-md-2">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="<?php echo site_url().'home';?>"><img src="<?= base_url('assets/'); ?>assets/img/logo/ubsiportal.png" alt="" style="width:167px;"></a>
+                            <a href="<?php echo site_url().'home';?>"><img src="<?= base_url('assets/'); ?>assets/img/logo/portalent1.png" alt="" style="width:167px;"></a>
                         </div>  
                     </div>
                     <div class="col-lg-9 col-md-9">

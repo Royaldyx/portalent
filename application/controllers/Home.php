@@ -26,7 +26,7 @@ class Home extends CI_Controller{
         $list = [$arrayList1,$arrayList2,$arrayList3,$arrayList4,$arrayList5,$arrayList6,$arrayList7,$arrayList8];
         $data['countList'] = $list;
         $data['job_categories'] = $this->modAdmin->job_categories();
-        $data['title'] = "UBSIPORTAL";
+        $data['title'] = "PORTALENT";
         if($this->session->userdata('uId')) {
 
             $data['profiles'] = $this->modUser->checkProfile(['uId' => $this->session->userdata('uId')]) ->row_array();
