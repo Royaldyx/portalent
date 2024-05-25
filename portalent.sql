@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 09, 2021 at 05:12 PM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 7.3.31
+-- Generation Time: May 26, 2024 at 12:17 AM
+-- Server version: 10.4.22-MariaDB
+-- PHP Version: 7.3.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `admin`
+-- Database: `portalent`
 --
 
 -- --------------------------------------------------------
@@ -41,7 +41,7 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`aId`, `aName`, `aDate`, `aEmail`, `aPassword`, `aImage`) VALUES
-(1, 'Deigo Siahaan', '2020-11-26 20:17:24', 'deigosiahaan@gmail.com', 'admin96', 'deigo.jpg');
+(1, 'Royaldy', '2020-11-26 20:17:24', 'admin@gmail.com', '123empat', 'male.png');
 
 -- --------------------------------------------------------
 
@@ -66,7 +66,8 @@ INSERT INTO `categories` (`cId`, `cName`, `cStatus`, `cDate`, `cDp`, `adminId`) 
 (35, 'Design', 1, '2021-05-27 09:44:46', 'staff.png', 1),
 (36, 'Marketing', 1, '2021-06-09 05:19:04', 'staff1.png', 1),
 (37, 'Operator', 1, '2021-06-09 05:19:51', 'staff2.png', 1),
-(38, 'IT', 1, '2021-06-09 05:20:12', 'staff3.png', 1);
+(38, 'IT', 1, '2021-06-09 05:20:12', 'staff3.png', 1),
+(43, 'entertainment', 1, '2024-05-25 15:09:57', 'WhatsApp_Image_2024-01-14_at_23_53_03.jpeg', 1);
 
 -- --------------------------------------------------------
 
@@ -83,14 +84,6 @@ CREATE TABLE `invoices` (
   `productId` int(11) NOT NULL,
   `userId` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `invoices`
---
-
-INSERT INTO `invoices` (`id`, `date`, `status`, `adminId`, `modelId`, `productId`, `userId`) VALUES
-(4, '2021-12-09 14:01:51', 1, 1, 30, 28, 3),
-(15, '2021-12-09 16:55:39', 1, 1, 33, 25, 3);
 
 -- --------------------------------------------------------
 
@@ -156,7 +149,8 @@ INSERT INTO `products` (`pId`, `pName`, `pStatus`, `pDate`, `categoryId`, `admin
 (28, 'Sales & Marketing', 1, '2021-06-09 05:21:32', 36, 1, 'staff3.png', NULL),
 (29, 'Construction', 1, '2021-06-09 05:21:53', 37, 1, 'staff4.png', NULL),
 (30, 'Data Science', 1, '2021-06-09 05:22:41', 38, 1, 'staff5.png', NULL),
-(31, 'Real Estate', 1, '2021-06-09 05:23:00', 36, 1, 'staff6.png', NULL);
+(31, 'Real Estate', 1, '2021-06-09 05:23:00', 36, 1, 'staff6.png', NULL),
+(32, 'Shoutcaster at gg', 1, '2024-05-25 21:58:02', 35, 1, 'Color_Hunt_Palette_22283131363f76abaeeeeeee.png', NULL);
 
 -- --------------------------------------------------------
 
@@ -183,7 +177,6 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`uId`, `name`, `email`, `address`, `education`, `skills`, `password`, `images`, `cv`, `date`, `aId`) VALUES
-(3, 'deigo', 'deigosiahaan@gmail.com', 'Cikarang', 'd3 sistem informasi', 'php,js,html,css', '827ccb0eea8a706c4c34a16891f84e7b', 'deigo2.jpg', 'CV.docx', '2021-05-24', 1),
 (4, 'voker', 'voker@gmail.com', 'cikarang', 'S1 Ilmu Hukum', 'pp', '827ccb0eea8a706c4c34a16891f84e7b', 'user.png', 'CV.docx', '2021-06-01', 1),
 (5, 'anti', 'antimage@gmail.com', 'Beijing', '-', '-', '827ccb0eea8a706c4c34a16891f84e7b', 'user.png', 'CV.docx', '2021-06-06', 1),
 (6, 'tinker', 'tinker@gmail.com', 'TOKYO', '-', '-', '827ccb0eea8a706c4c34a16891f84e7b', 'user.png', 'CV.docx', '2021-06-03', 1),
@@ -193,7 +186,8 @@ INSERT INTO `users` (`uId`, `name`, `email`, `address`, `education`, `skills`, `
 (10, 'wind', 'wr@gmail.com', 'Busan', '-', '-', '827ccb0eea8a706c4c34a16891f84e7b', 'user.png', 'CV.docx', '2021-06-07', 1),
 (12, 'fasd', 'fasdsa@gmail.com', 'Makasar', '-', '-', '0cc175b9c0f1b6a831c399e269772661', 'user.png', 'CV.docx', '2021-06-08', 1),
 (18, 'John F Kennedy', 'john@gmail.com', 'USA', '-', '-', '827ccb0eea8a706c4c34a16891f84e7b', 'user.png', '-', '2021-06-07', 1),
-(19, 'John Lennon', 'lennon@gmail.com', 'London', 'S1 Ilmu Hukum', 'Mampu bekerja dalam tim', '827ccb0eea8a706c4c34a16891f84e7b', 'user.png', 'CV1.docx', '2021-06-07', 1);
+(19, 'John Lennon', 'lennon@gmail.com', 'London', 'S1 Ilmu Hukum', 'Mampu bekerja dalam tim', '827ccb0eea8a706c4c34a16891f84e7b', 'user.png', 'CV1.docx', '2021-06-07', 1),
+(21, 'hanan', 'hanan@gmail.com', 'bogor', 'testttt', 'testttqq', '6ef1b7091ed4df97ab56f7d59dfd6d88', 'user.png', 'l5FaWq5GzV8i8Yt5ctxvZyfWBjlsfLbaSzhpgct1.pdf', '2024-05-25', 1);
 
 --
 -- Indexes for dumped tables
@@ -259,7 +253,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `cId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `cId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT for table `invoices`
@@ -277,13 +271,13 @@ ALTER TABLE `models`
 -- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
-  MODIFY `pId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+  MODIFY `pId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `uId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
+  MODIFY `uId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- Constraints for dumped tables
