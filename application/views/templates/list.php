@@ -2,9 +2,9 @@
 
         <!-- Hero Area Start-->
         <div class="slider-area ">
-            <div class="single-slider section-overly slider-height2 d-flex align-items-center" data-background="<?php echo base_url('assets/images/pexels-fauxels-3184357.jpg'); ?>">
+            <div class="single-slider section-overly slider-height2 d-flex align-items-center" data-background="<?php echo base_url('assets/images/banner3.png'); ?>">
                 <div class="container">
-                <span style="position:absolute;bottom:0;right:0;color:black;">Photo by <a href="https://www.pexels.com/@fauxels" target="_blank"><b style="color:#edeae8 !important">Fauxels</b></a> from <a href="https://www.pexels.com/photo/people-working-in-front-of-the-computer-3184357/" target="_blank"><b style="color:#edeae8 !important">Pexels</b></a></span>
+                <!-- <span style="position:absolute;bottom:0;right:0;color:black;">Photo by <a href="https://www.pexels.com/@fauxels" target="_blank"><b style="color:#edeae8 !important">Fauxels</b></a> from <a href="https://www.pexels.com/photo/people-working-in-front-of-the-computer-3184357/" target="_blank"><b style="color:#edeae8 !important">Pexels</b></a></span> -->
                     <div class="row">
                         <div class="col-xl-12">
                             <div class="hero-cap text-center">
