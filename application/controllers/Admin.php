@@ -434,6 +434,30 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 setFlashData('alert-danger', 'Please login first to add your product', 'admin/login');
             }
         }
+        public function allJobsApply()
+        {
+            if(adminLoggedIn()){
+                $config['base_url'] = site_url('admin/allJobsApply');
+                $totalRows = $this->modAdmin->getAllJobsApply();
+                $config['total_rows'] = $totalRows;
+                $config['per_page'] = 10;
+                $config['uri_segment'] = 3;
+                $this->load->library('pagination');
+                $this->pagination->initialize($config);
+
+                $page = ($this->uri->segment(3)) ? $this->uri->segment(3): 0;
+                $data['allProducts'] = $this->modAdmin->fetchAllJobsApply();
+                $data['profiles'] = $this->modAdmin->checkProfile(['aId' => $this->session->userdata('aId')]) ->row_array();
+                $data['links'] = $this->pagination->create_links();
+
+                $this->load->view('admin/header', $data);
+                $this->load->view('admin/product/allJobApply', $data);
+                $this->load->view('admin/footer', $data);
+            }
+            else{
+                setFlashData('alert-danger', 'Please login first to add your product', 'admin/login');
+            }
+        }
 
         public function editProduct($pId)  
         {   

@@ -83,26 +83,81 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
         public function getAllProducts()
         {
-            return $this->db->get_where('products', array('pStatus'=>1))->num_rows();
+            return $this->db->get_where('products', array('pStatus'=>'1'))->num_rows();
         }
         public function fetchAllProducts()
         {
-            $query = "tampil-product";
-            $method = "GET";
-            $data = "";
+            // $query = "tampil-product";
+            // $method = "GET";
+            // $data = "";
 
-            $result = $this->auth->cekAPI($query, $method, $data);
-            $data               = array();
-            $data[]             = json_decode($result);
-            if ($data[0] != null) {
-                $allProducts = $data[0]->values;
+            // $result = $this->auth->cekAPI($query, $method, $data);
+            // $data               = array();
+            // $data[]             = json_decode($result);
+            // if ($data[0] != null) {
+            //     $allProducts = $data[0]->values;
     
-                return $allProducts;
-            } else {
-                $allProducts  = array();
+            //     return $allProducts;
+            // } else {
+            //     $allProducts  = array();
     
-                return $allProducts;
+            //     return $allProducts;
+            // }
+            $query = $this->db->get_where('products', array('pStatus'=>'1'));
+            $this->db->select('*');
+            $this->db->from('products');
+            $this->db->join('categories', 'cId=categoryId');
+            $this->db->where('products.pStatus', '1');
+            $query = $this->db->get();
+            // print_r($query->result());
+            // die();   
+            if($query->num_rows() > 0){
+                foreach ($query->result() as $row) {
+                    $data[] = $row;
+                }
+                return $data;
             }
+            return [];
+        }
+        public function getAllJobsApply()
+        {
+            return $this->db->get_where('invoices', array('status'=>'1'))->num_rows();
+        }
+        public function fetchAllJobsApply()
+        {
+            $query = $this->db->query("SELECT invoices.id,
+                                        invoices.status,
+                                        models.*,
+                                        products.pName,
+                                        users.name
+                                    FROM
+                                        invoices
+                                    LEFT JOIN
+                                        models
+                                    ON
+                                        invoices.modelId = models.mId
+                                    LEFT JOIN
+                                        products
+                                    ON
+                                        models.productId = products.pId
+                                    LEFT JOIN
+                                        users
+                                    ON
+                                        users.uId = invoices.userId
+                                    ");
+        $result = $query->result();
+        // print_r($result);
+        // die();   
+        return $result;
+            // print_r($query->result());
+            // die();   
+            // if($query->num_rows() > 0){
+            //     foreach ($query->result() as $row) {
+            //         $data[] = $row;
+            //     }
+            //     return $data;
+            // }
+            // return ;
         }
 
         // public function fetchAllProducts($limit, $start)

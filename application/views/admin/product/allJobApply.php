@@ -47,13 +47,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?php echo site_url('admin/allProducts'); ?>" class="nav-link active">
+                    <a href="<?php echo site_url('admin/allProducts'); ?>" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>All Jobs</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?php echo site_url('admin/allJobsApply'); ?>" class="nav-link">
+                    <a href="<?php echo site_url('admin/allJobsApply'); ?>" class="nav-link active">
                         <i class="far fa-circle nav-icon"></i>
                         <p>All Jobs Apply</p>
                     </a>
@@ -113,7 +113,7 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">All Jobs</h3>
+                            <h3 class="card-title">All Jobs Apply</h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -127,9 +127,10 @@
                             <table id="example1" class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
-                                        <th>ID</th>
-                                        <th>Nama</th>
-                                        <th>Kategori</th>
+                                        <th>Nama Job</th>
+                                        <th>Nama PT</th>
+                                        <th>Location</th>
+                                        <th>Nama User</th>
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
@@ -138,13 +139,26 @@
                                     <?php if($allProducts): ?>
                                         <?php foreach($allProducts as $product): ?>
                                             <tr>
-                                                <td><?php echo $product->pId; ?></td>
-                                                <td><?php echo $product->pName; ?></td>
-                                                <td><?php echo $product->cName; ?></td>
-                                                <td><?php echo ($product->pStatus == 1) ? 'Active' : 'Inactive'; ?></td>
+                                            <td><?php echo $product->pName ?></td>
+                                            <td><?php echo $product->mName ?></td>
+                                            <td><?php echo $product->location ?></td>
+                                                <!-- <td><?php echo $product->pId; ?></td> -->
+                                                <!-- <td><?php echo $product->pName; ?></td> -->
+                                                <td><?php echo $product->name; ?></td>
+                                                <!-- <td><?php echo ($product->pStatus == 1) ? 'Active' : 'Inactive'; ?></td> -->
                                                 <td>
-                                                    <a href="<?php echo site_url('admin/editProduct/'.$product->pId); ?>" class="btn btn-info btn-sm">Edit</a>
-                                                    <a href="<?php echo site_url('admin/deleteProduct/'.$product->pId); ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this product?');">Delete</a>
+                                                    <!-- <a href="<?php echo site_url('admin/editProduct/'.$product->pId); ?>" class="btn btn-info btn-sm">Edit</a>
+                                                    <a href="<?php echo site_url('admin/deleteProduct/'.$product->pId); ?>" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this product?');">Delete</a> -->
+                                                    <?php 
+                                                        $status = $product->status;
+                                                        if($status == '1') {
+                                                            echo '<span class="badge bg-warning">Waiting</span>';
+                                                        }elseif($status == '2') {
+                                                            echo '<span class="badge bg-danger">Rejected</span>';
+                                                        }elseif($status == '3') {
+                                                            echo '<span class="badge bg-success">Accepted</span>';
+                                                        }
+                                                    ?>
                                                 </td>
                                             </tr>
                                         <?php endforeach; ?>

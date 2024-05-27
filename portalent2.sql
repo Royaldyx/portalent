@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2024 at 12:17 AM
+-- Generation Time: May 26, 2024 at 06:37 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.3.33
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `portalent`
+-- Database: `portalent2`
 --
 
 -- --------------------------------------------------------
@@ -84,6 +84,16 @@ CREATE TABLE `invoices` (
   `productId` int(11) NOT NULL,
   `userId` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `invoices`
+--
+
+INSERT INTO `invoices` (`id`, `date`, `status`, `adminId`, `modelId`, `productId`, `userId`) VALUES
+(16, '2024-05-26 12:30:27', 1, 1, 24, 24, 22),
+(17, '2024-05-26 12:32:30', 1, 1, 25, 27, 22),
+(18, '2024-05-26 13:37:57', 1, 1, 24, 24, 23),
+(19, '2024-05-26 18:23:45', 1, 1, 25, 27, 21);
 
 -- --------------------------------------------------------
 
@@ -187,7 +197,10 @@ INSERT INTO `users` (`uId`, `name`, `email`, `address`, `education`, `skills`, `
 (12, 'fasd', 'fasdsa@gmail.com', 'Makasar', '-', '-', '0cc175b9c0f1b6a831c399e269772661', 'user.png', 'CV.docx', '2021-06-08', 1),
 (18, 'John F Kennedy', 'john@gmail.com', 'USA', '-', '-', '827ccb0eea8a706c4c34a16891f84e7b', 'user.png', '-', '2021-06-07', 1),
 (19, 'John Lennon', 'lennon@gmail.com', 'London', 'S1 Ilmu Hukum', 'Mampu bekerja dalam tim', '827ccb0eea8a706c4c34a16891f84e7b', 'user.png', 'CV1.docx', '2021-06-07', 1),
-(21, 'hanan', 'hanan@gmail.com', 'bogor', 'testttt', 'testttqq', '6ef1b7091ed4df97ab56f7d59dfd6d88', 'user.png', 'l5FaWq5GzV8i8Yt5ctxvZyfWBjlsfLbaSzhpgct1.pdf', '2024-05-25', 1);
+(21, 'hanan', 'hanan@gmail.com', 'bogor', 'testttt', 'testttqq', '6ef1b7091ed4df97ab56f7d59dfd6d88', 'user.png', 'l5FaWq5GzV8i8Yt5ctxvZyfWBjlsfLbaSzhpgct1.pdf', '2024-05-25', 1),
+(22, 'yazidhaikal', 'zhied@gmail.com', 'Menteng, Jakarta Pusat', 'Web Desainer And Development', 'Desainer', '827ccb0eea8a706c4c34a16891f84e7b', 'user.png', '-', '2024-05-26', 1),
+(23, 'Syamil', 'syamil@gmail.com', 'depok', '-', '-', '827ccb0eea8a706c4c34a16891f84e7b', 'user.png', '-', '2024-05-26', 1),
+(24, 'tarizki', 'adeliatrzky@gmail.com', 'Jl.Cipinang Pulo maja', '-', '-', 'e10adc3949ba59abbe56e057f20f883e', 'user.png', '-', '2024-05-26', 1);
 
 --
 -- Indexes for dumped tables
@@ -259,7 +272,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `invoices`
 --
 ALTER TABLE `invoices`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `models`
@@ -277,7 +290,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `uId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `uId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 
 --
 -- Constraints for dumped tables
