@@ -10,7 +10,7 @@
                 </p>
             </a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-list-ul"></i>
                 <p>Categories
@@ -31,7 +31,7 @@
                     </a>
                 </li>
             </ul>
-        </li>
+        </li> -->
         <li class="nav-item menu-open">
             <a href="#" class="nav-link active">
                 <i class="nav-icon fas fa-layer-group"></i>
@@ -47,13 +47,13 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?php echo site_url('admin/allProducts'); ?>" class="nav-link">
+                    <a href="<?php echo site_url('admin/allProducts'); ?>" class="nav-link active">
                         <i class="far fa-circle nav-icon"></i>
                         <p>All Jobs</p>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="<?php echo site_url('admin/allJobsApply'); ?>" class="nav-link active">
+                    <a href="<?php echo site_url('admin/allJobsApply'); ?>" class="nav-link">
                         <i class="far fa-circle nav-icon"></i>
                         <p>All Jobs Apply</p>
                     </a>
@@ -82,7 +82,7 @@
                 </li>
             </ul>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-layer-group"></i>
                 <p>User
@@ -97,7 +97,7 @@
                     </a>
                 </li>
             </ul>
-        </li>
+        </li> -->
     </ul>
 </nav>
 <!-- /.sidebar-menu -->
